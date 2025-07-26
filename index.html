@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>To-Do List</title>
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+    
+  </head>
+  
+  
+  <body>
+    
+     <main class="container">
+       
+       <header>
+         <h1>To-Do List</h1>
+       </header>
+       
+       <form>
+         
+         <div class="input-name">
+           <label>Tugas:</label>
+           <br />
+             <input type="text" id="username" placeholder="Tambahkan tugas anda.." />
+         </div>
+         
+          <div class="input-date">
+           <label>Tanggal:</label>
+           <br />
+             <input type="date" id="date" placeholder="DD//MM//YY"/>
+          </div>
+          
+          <div>
+            <label></label>
+            <br />
+            <button class="addbutton" type="button">+</button>
+            <label></label>
+          </div>
+       </form>
+       
+        <section>
+          <div id="action">
+          <button class="action1" type="button">Filter</button>
+          <button class="action2" type="button">Delete All</button>
+          </div>
+          
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>TASK</th>
+                <th>DUE DATE</th>
+                <th>STATUS</th>
+                <th>ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody id="todoTableBody">
+              <tr>
+                <td colspan="4" style="text-align:center;"> <em>No task found</em></td>
+                </tr>
+            </tbody>
+          </table>
+        </section>
+        </div>
+        
+     </main>
+     
+     <script src="/js/script.js"></script>
+  </body>
+  
+</html>
